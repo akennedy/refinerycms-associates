@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    associates:
+      title: Associates
+  admin:
+    associates:
+      actions:
+        create_new: Add New Associate
+        reorder: Reorder Associates
+        reorder_done: Done Reordering Associates
+      records:
+        title: Associates
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Associates yet. Click "Add New Associate" to add your first associate.
+      associate:
+        view_live_html: View this associate live <br/><em>(opens in a new window)</em>
+        edit: Edit this associate
+        delete: Remove this associate forever
+  associates:
+    show:
+      other: Other Associates

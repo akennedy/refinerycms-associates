@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    associates:
+      title: Associates
+  admin:
+    associates:
+      actions:
+        create_new: Maak een nieuwe Associate
+        reorder: Wijzig de volgorde van de Associates
+        reorder_done: Klaar met het wijzingen van de volgorde van de Associates
+      records:
+        title: Associates
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Associates. Druk op 'Maak een nieuwe Associate' om de eerste aan te maken.
+      associate:
+        view_live_html: Bekijk deze associate op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze associate
+        delete: Verwijder deze associate voor eeuwig
+  associates:
+    show:
+      other: Andere Associates

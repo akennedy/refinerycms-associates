@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    associates:
+      title: Associates
+  admin:
+    associates:
+      actions:
+        create_new: CREATE NEW Associate
+        reorder: REORDR Associates
+        reorder_done: DUN REORDERIN Associates
+      records:
+        title: Associates
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Associates YET. CLICK "CREATE NEW Associate" 2 ADD UR FURST associate.
+      associate:
+        view_live_html: VIEW DIS associate LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS associate
+        delete: REMOOV DIS associate FOREVR
+  associates:
+    show:
+      other: OTHR Associates

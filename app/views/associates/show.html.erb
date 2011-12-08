@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @associate.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @associate.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Bio</h1>
+    <p>
+      <%=raw @associate.bio %>
+    </p>
+  </section>
+  <section>
+    <h1>Contact Info</h1>
+    <p>
+      <%=raw @associate.contact_info %>
+    </p>
+  </section>
+  <section>
+    <h1>Listing Link</h1>
+    <p>
+      <%=raw @associate.listing_link %>
+    </p>
+  </section>
+  <section>
+    <h1>Email Address</h1>
+    <p>
+      <%=raw @associate.email_address %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="associates">
+      <% @associates.each do |associate| %>
+        <li>
+          <%= link_to associate.name, associate_path(associate) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    associates:
+      title: Associates
+  admin:
+    associates:
+      actions:
+        create_new: Lag en ny Associate
+        reorder: Endre rekkefølgen på Associates
+        reorder_done: Ferdig å endre rekkefølgen Associates
+      records:
+        title: Associates
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Associates enda. Klikk på "Lag en ny Associate" for å legge til din første associate.
+      associate:
+        view_live_html: Vis hvordan denne associate ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne associate
+        delete: Fjern denne associate permanent
+  associates:
+    show:
+      other: Andre Associates

@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::AssociatesController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_associates_path
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_associate_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::AssociatesController.sortable? and Associate.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Associates"),
+                 admin_associates_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Associates"),
+                 admin_associates_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>
